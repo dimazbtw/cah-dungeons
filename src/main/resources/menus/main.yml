@@ -1,0 +1,143 @@
+# Main Dungeon Hub Menu
+menu:
+  title: "&8&lDungeon Hub"
+  size: 45
+
+  items:
+    play:
+      slot: 13
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNTkxZTY5MDllNmEyODFiMzcxODM2ZTQ2MmQ2N2EyYzc4ZmEwOTUyZTkxMGYzMmI0MWEyNmM0OGMxNzU3YyJ9fX0="
+      name: "&a&lDungeons"
+      lore:
+        - "&7Comece sua aventura!"
+        - ""
+        - "&fStatus: {in_dungeon_status}"
+        - "&fSessões Ativas: &e{active_sessions}"
+        - "&fJogadores: &e{total_players_in_dungeons}"
+        - ""
+        - "&eClique para jogar!"
+      glow: true
+      action_type: "play"
+
+    equipment:
+      slot: 11
+      material: "DIAMOND_CHESTPLATE"
+      name: "&b&lEquipamento"
+      lore:
+        - "&7Configure seu equipamento de dungeon!"
+        - ""
+        - "&fSlots disponíveis:"
+        - "&7• 4 peças de armadura"
+        - "&7• 2 itens extras"
+        - ""
+        - "&c&lAVISO: &cSe você morrer,"
+        - "&cperde todo este equipamento!"
+        - ""
+        - "&eClique para configurar!"
+      glow: false
+      action_type: "equipment"
+
+    enchants:
+      slot: 15
+      material: "ENCHANTED_BOOK"
+      name: "&d&lEncantamentos"
+      lore:
+        - "&7Melhore sua arma de dungeon!"
+        - ""
+        - "&fEncantamentos:"
+        - "&7• Smite - Dano extra"
+        - "&7• Wisdom - XP extra"
+        - "&7• Lifesteal - Roubo de vida"
+        - "&7• Crit - Dano crítico"
+        - "&7• Thor - Raio em área"
+        - "&7• Shockwave - Knockback"
+        - ""
+        - "&eClique para melhorar!"
+      glow: true
+      action_type: "gear"
+
+    perks:
+      slot: 20
+      material: "NETHER_STAR"
+      name: "&6&lAtributos"
+      lore:
+        - "&7Distribua seus pontos de atributo!"
+        - ""
+        - "&fAtributos:"
+        - "&c• Vitalidade &7- Vida máxima"
+        - "&6• Força &7- Dano extra"
+        - "&b• Agilidade &7- Velocidade"
+        - ""
+        - "&7Pontos disponíveis: &e{perk_points}"
+        - ""
+        - "&eClique para distribuir!"
+      glow: false
+      action_type: "perks"
+
+    rewards:
+      slot: 24
+      material: "CHEST"
+      name: "&e&lRecompensas"
+      lore:
+        - "&7Colete suas recompensas pendentes!"
+        - ""
+        - "&7Recompensas: &e{pending_rewards}"
+        - ""
+        - "&eClique para coletar!"
+      glow: true
+      action_type: "rewards"
+
+    profile:
+      slot: 31
+      material: "{player}"
+      name: "&e&lPerfil"
+      lore:
+        - '&7Veja suas estatísticas'
+        - ''
+        - '&fNível: &e{level}'
+        - '&a{level_bar}'
+        - ''
+        - '&fVitalidade: &c❤{vitality}'
+        - '&fForça: &6⚔{strength}'
+        - '&fAgilidade: &b⚡{agility}'
+        - ''
+        - '&fPontos: &6{points}'
+        - ''
+        - '&eClique para detalhes!'
+      glow: false
+      action_type: "profile"
+
+    leaderboard:
+      slot: 29
+      material: "GOLD_INGOT"
+      name: "&6&lRanking"
+      lore:
+        - "&7Veja os melhores jogadores!"
+        - ""
+        - "&fCategorias:"
+        - "&7• Dungeons Completadas"
+        - "&7• Mobs Eliminados"
+        - "&7• Maior Round"
+        - ""
+        - "&eClique para ver!"
+      glow: false
+      action_type: "leaderboard"
+
+    quests:
+      slot: 33
+      material: "WRITABLE_BOOK"
+      name: "&c&lMissões"
+      lore:
+        - "&7Complete desafios para recompensas!"
+        - ""
+        - "&7Em breve..."
+      glow: false
+      action_type: "quests"
+
+    # Decorative glass panes
+    decoration:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27, 28, 30, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: "&7"
+      lore: []

@@ -1,0 +1,189 @@
+# Dungeons - Mensagens
+
+prefix: "&8[&aDungeons&8] &7"
+
+messages:
+  # Geral
+  no-permission: "&cVocê não tem permissão para isso."
+  player-only: "&cApenas jogadores podem executar esse comando."
+  unknown-command: "&cComando desconhecido. Use &e/dungeon help&c."
+  reload-success: "&aConfiguração recarregada com sucesso!"
+
+  # Dungeon
+  dungeon-not-found: "&cDungeon &e{dungeon} &cnão encontrada."
+  already-in-dungeon: "&cVocê já está em uma dungeon."
+  not-in-dungeon: "&cVocê não está em uma dungeon."
+  dungeon-full: "&cEssa dungeon está cheia."
+  dungeon-in-progress: "&cEssa dungeon já está em progresso."
+  dungeon-joined: "&aVocê entrou na dungeon &e{dungeon}&a!"
+  dungeon-left: "&eVocê saiu da dungeon."
+  dungeon-started: "&a&lA dungeon começou! Boa sorte!"
+  dungeon-completed: "&a&l✦ DUNGEON COMPLETADA! ✦"
+  dungeon-failed: "&c&l✦ DUNGEON FALHOU! ✦"
+
+  # Rounds
+  round-start: "&eRound &c{round}&e começou!"
+  round-complete: "&aRound &e{round} &acompleto!"
+  boss-spawning: "&c&l⚠ O BOSS ESTÁ CHEGANDO! ⚠"
+  boss-spawned: "&c&l⚠ O BOSS APARECEU! ⚠"
+  boss-defeated: "&a&l✦ BOSS DERROTADO! ✦"
+
+  # Jogadores
+  player-joined: "&e{player} &aentrou na dungeon! &7({current}/{max})"
+  player-left: "&e{player} &csaiu da dungeon! &7({current}/{max})"
+  player-died: "&c{player} &4morreu!"
+  minimum-players: "&cPrecisa de pelo menos &e{min} jogadores &cpara iniciar."
+  waiting-players: "&eAguardando &c{needed} &ejogador(es)..."
+
+  # Countdown
+  starting-in: "&aIniciando em &e{time} &asegundos..."
+  starting-cancelled: "&cInício cancelado! Jogadores insuficientes."
+
+  # Mobs
+  mob-killed: "&7Você matou &c{mob}&7!"
+  all-mobs-killed: "&aTodos os mobs foram eliminados!"
+
+  # Stats
+  stats-header: "&e&l--- Suas Estatísticas ---"
+  stats-dungeons-completed: "&fDungeons Completas: &a{value}"
+  stats-mobs-killed: "&fMobs Eliminados: &a{value}"
+  stats-deaths: "&fMortes: &c{value}"
+  stats-playtime: "&fTempo de Jogo: &b{value}"
+
+  # Comandos
+  help-header: "&e&l--- Comandos Dungeon ---"
+  help-join: "&e/dungeon join <nome> &7- Entrar em uma dungeon"
+  help-leave: "&e/dungeon leave &7- Sair da dungeon atual"
+  help-list: "&e/dungeon list &7- Listar dungeons disponíveis"
+  help-stats: "&e/dungeon stats &7- Ver suas estatísticas"
+  help-menu: "&e/dungeon menu &7- Abrir menu principal"
+
+  # Admin
+  admin-help-header: "&c&l--- Comandos Admin ---"
+  admin-help-reload: "&c/dungeon reload &7- Recarregar configurações"
+  admin-help-setspawn: "&c/dungeon setspawn <dungeon> <tipo> &7- Definir spawn"
+  admin-help-forcestart: "&c/dungeon forcestart &7- Forçar início"
+  admin-help-forcestop: "&c/dungeon forcestop &7- Forçar parada"
+
+  # Localizações
+  spawn-set: "&aSpawn &e{type} &adefinido para dungeon &e{dungeon}&a!"
+  spawn-types: "&7Tipos válidos: &eentry, exit, mobs-spawn, boss-spawn"
+  invalid-spawn-type: "&cTipo de spawn inválido. Use: &eentry, exit, mobs-spawn, boss-spawn"
+
+  # Erros
+  error-occurred: "&cOcorreu um erro. Tente novamente."
+  invalid-dungeon: "&cDungeon inválida."
+  no-available-spawns: "&cNenhum ponto de spawn disponível!"
+  inventory-full: "&cSeu inventário está cheio! Libere espaço e tente novamente."
+  
+  # Recompensas
+  rewards-pending: "&aVocê tem &e{amount} &arecompensas pendentes! Use &e/dungeon rewards &apara coletar."
+  reward-claimed: "&aRecompensa coletada com sucesso!"
+  all-rewards-claimed: "&aVocê coletou &e{amount} &arecompensas!"
+
+  # Equipamento
+  equipment-lost: "&c&lVocê perdeu seu equipamento de dungeon!"
+  equipment-saved: "&aEquipamento salvo com sucesso!"
+  equipment-cleared: "&cEquipamento de dungeon limpo!"
+
+  # Morte e Espectador
+  spectator-mode: "&7Você está em modo espectador. Aguarde o fim da ronda para renascer."
+  players-revived: "&a{count} jogador(es) renasceram para a próxima ronda!"
+
+# ActionBar
+# Placeholders disponíveis em 'in-dungeon':
+# {dungeon} - Nome da dungeon
+# {round} - Ronda atual
+# {mobs_left} - Mobs restantes
+# {player} - Nome do jogador
+# {health} - Vida atual
+# {max_health} - Vida máxima
+# {health_percent} - Vida em porcentagem
+# Atributos: {vitality}, {strength}, {agility}
+# Encantamentos: {smite}, {wisdom}, {crit}, {thor}, {lifesteal}, {shockwave}
+# Bônus: {smite_bonus}, {wisdom_bonus}
+# Estatísticas: {xp}, {points}, {level}, {kills}
+actionbar:
+  in-dungeon: "&c❤ {health}/{max_health} &7| &aRound &f{round} &7| &eMobs: &f{mobs_left}"
+  waiting: "&eAguardando jogadores... &f{current}/{min}"
+  starting: "&aIniciando em &f{time}s"
+  mob-health: "&c{mob_name} &8| {health_bar}"
+
+# Progress Bar (para vida dos mobs)
+progress-bar:
+  amount: 10
+  symbol: '❤'
+  color-filled: '&c'
+  color-empty: '&7'
+
+# BossBar
+bossbar:
+  format: "&c&l{boss_name}"
+  color: RED
+  style: SEGMENTED_10
+
+# Titles
+titles:
+  dungeon-start:
+    title: "&a&lDUNGEON INICIADA!"
+    subtitle: "&eBoa sorte, aventureiro!"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+
+  round-start:
+    title: "&c&lROUND {round}"
+    subtitle: "&7Prepare-se para a batalha!"
+    fade-in: 5
+    stay: 30
+    fade-out: 5
+
+  boss-spawn:
+    title: "&4&l⚠ BOSS ⚠"
+    subtitle: "&c{boss_name} apareceu!"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+
+  dungeon-complete:
+    title: "&a&l✦ VITÓRIA ✦"
+    subtitle: "&eDungeon completada!"
+    fade-in: 10
+    stay: 60
+    fade-out: 20
+
+  dungeon-failed:
+    title: "&c&l✖ DERROTA ✖"
+    subtitle: "&7Melhor sorte na próxima vez..."
+    fade-in: 10
+    stay: 60
+    fade-out: 20
+
+  player-death:
+    title: "&c&lVOCÊ MORREU"
+    subtitle: "&7Aguarde o fim da ronda para renascer..."
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+
+  player-revived:
+    title: "&a&lRENASCIDO!"
+    subtitle: "&eVocê está de volta à batalha!"
+    fade-in: 5
+    stay: 30
+    fade-out: 10
+
+# Sons
+sounds:
+  round-complete: ENTITY_PLAYER_LEVELUP
+  boss-spawn: ENTITY_ENDER_DRAGON_GROWL
+  boss-defeated: ENTITY_ENDER_DRAGON_DEATH
+  dungeon-complete: UI_TOAST_CHALLENGE_COMPLETE
+  dungeon-failed: ENTITY_WITHER_DEATH
+  player-death: ENTITY_WITHER_SKELETON_DEATH
+  player-revived: ENTITY_PLAYER_LEVELUP
+  countdown: BLOCK_NOTE_BLOCK_PLING
+  mob-hit: ENTITY_PLAYER_HURT
+  reward-claim: ENTITY_EXPERIENCE_ORB_PICKUP
+  enchant-upgrade: ENTITY_PLAYER_LEVELUP
+  level-up: UI_TOAST_CHALLENGE_COMPLETE

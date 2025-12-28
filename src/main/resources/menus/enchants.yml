@@ -1,0 +1,68 @@
+# Menu de Encantamentos da Arma
+menu:
+  title: "&8&lMelhorias da Arma"
+  size: 45
+
+  # Slots dos encantamentos
+  enchant-slots: [10, 12, 14, 16, 28, 30, 32, 34]
+
+  # Materiais para cada encantamento
+  enchant-materials:
+    smite: IRON_SWORD
+    wisdom: EXPERIENCE_BOTTLE
+    lifesteal: GOLDEN_APPLE
+    crit: DIAMOND_SWORD
+    thor: LIGHTNING_ROD
+    shockwave: TNT
+
+  # Cores para cada encantamento
+  enchant-colors:
+    smite: "&c"
+    wisdom: "&a"
+    lifesteal: "&d"
+    crit: "&6"
+    thor: "&b"
+    shockwave: "&e"
+
+  # Descrições de níveis
+  level-descriptions:
+    smite: "+{value}% dano"
+    wisdom: "+{value}% XP"
+    lifesteal: "{chance}% chance, +{value} vida"
+    crit: "{chance}% chance dano dobrado"
+    thor: "{chance}% chance, {radius} blocos"
+    shockwave: "{chance}% chance, {radius} blocos"
+
+  # Botões
+  buttons:
+    player-info:
+      slot: 22
+      material: PLAYER_HEAD
+      name: "&e&l{player}"
+      lore:
+        - "&7Seus pontos: &6{points}"
+        - "&7Nível: &a{level}"
+        - ""
+        - "&7Clique nos encantamentos"
+        - "&7para fazer upgrade!"
+
+    weapon-preview:
+      slot: 4
+      material: DIAMOND_SWORD
+      name: "&c&lSua Arma"
+      glow: true
+      lore:
+        - ""
+        - "&7Use seus &6pontos &7para"
+        - "&7melhorar sua arma!"
+
+    back:
+      slot: 40
+      material: BARRIER
+      name: "&cVoltar"
+      lore: []
+
+  # Decoração
+  decoration:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&7"

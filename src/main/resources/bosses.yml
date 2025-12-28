@@ -1,0 +1,196 @@
+# Boss Mobs Configuration
+# Define powerful boss mobs for dungeons
+
+bosses:
+  zombie_king:
+    entity: ZOMBIE
+    baby: false
+    name: "&c&l☠ ZOMBIE KING ☠"
+    range: 20.0
+    equipment:
+      helmet: 7033d7bb1b0c9cc2ac2ae421570bddca739123ad23f7c1da01171782038d9d29
+      chestplate: DIAMOND_CHESTPLATE
+      leggings: DIAMOND_LEGGINGS
+      boots: DIAMOND_BOOTS
+      main-hand: DIAMOND_SWORD
+    attributes:
+      speed: 0.20
+      damage: 15.0
+      health: 200.0
+      knockback-resistance: 0.8
+    abilities:
+      summon-minions:
+        enabled: true
+        interval: 30
+        count: 3
+        mob-type: zombie
+      ground-slam:
+        enabled: true
+        interval: 20
+        radius: 5.0
+        damage: 10.0
+    rewards:
+      - id: diamond_reward
+        chance: 100
+      - id: large_points
+        chance: 100
+      - id: large_xp
+        chance: 100
+      - id: vip_reward
+        chance: 5
+      - id: crate_key
+        chance: 25
+    drops:
+      crown:
+        material: GOLDEN_HELMET
+        name: '&6&lZombie King Crown'
+        lore:
+          - '&7A crown from the fallen king'
+          - ''
+          - '&eRare Drop'
+        chance: 10
+        enchants:
+          - PROTECTION_ENVIRONMENTAL:4
+          - DURABILITY:3
+
+  skeleton_lord:
+    entity: SKELETON
+    name: "&f&l💀 SKELETON LORD 💀"
+    range: 25.0
+    equipment:
+      helmet: 3a793b14e1ba7f6d39f3eb1dfb52f1a7e7f2dfa3c4e0b5a1c2d3e4f5a6b7c8d9
+      chestplate: IRON_CHESTPLATE
+      leggings: IRON_LEGGINGS
+      boots: IRON_BOOTS
+      main-hand: BOW
+    attributes:
+      speed: 0.25
+      damage: 12.0
+      health: 150.0
+      knockback-resistance: 0.5
+    abilities:
+      arrow-rain:
+        enabled: true
+        interval: 25
+        radius: 8.0
+        arrows: 10
+      teleport:
+        enabled: true
+        interval: 15
+        range: 10.0
+    rewards:
+      - id: diamond_reward
+        chance: 100
+      - id: medium_points
+        chance: 100
+      - id: large_xp
+        chance: 80
+      - id: rare_sword
+        chance: 10
+    drops:
+      lords_bow:
+        material: BOW
+        name: '&f&lSkeleton Lord Bow'
+        lore:
+          - '&7A powerful bow'
+          - '&7infused with dark magic'
+          - ''
+          - '&eRare Drop'
+        chance: 15
+        enchants:
+          - ARROW_DAMAGE:5
+          - ARROW_INFINITE:1
+          - DURABILITY:3
+
+  spider_queen:
+    entity: SPIDER
+    name: "&8&l🕷 SPIDER QUEEN 🕷"
+    range: 18.0
+    attributes:
+      speed: 0.40
+      damage: 18.0
+      health: 180.0
+      knockback-resistance: 0.3
+    abilities:
+      web-trap:
+        enabled: true
+        interval: 20
+        radius: 4.0
+        duration: 5
+      spawn-spiderlings:
+        enabled: true
+        interval: 35
+        count: 5
+    rewards:
+      - id: diamond_reward
+        chance: 100
+      - id: medium_xp
+        chance: 100
+      - id: medium_points
+        chance: 80
+      - id: coins_reward
+        chance: 50
+    drops:
+      venom_fang:
+        material: SPIDER_EYE
+        name: '&4&lVenom Fang'
+        lore:
+          - '&7Dripping with deadly venom'
+          - ''
+          - '&cVery Rare'
+        chance: 8
+
+  wither_knight:
+    entity: WITHER_SKELETON
+    name: "&0&l⚔ WITHER KNIGHT ⚔"
+    range: 15.0
+    equipment:
+      helmet: NETHERITE_HELMET
+      chestplate: NETHERITE_CHESTPLATE
+      leggings: NETHERITE_LEGGINGS
+      boots: NETHERITE_BOOTS
+      main-hand: NETHERITE_SWORD
+    attributes:
+      speed: 0.28
+      damage: 20.0
+      health: 300.0
+      knockback-resistance: 1.0
+    abilities:
+      wither-strike:
+        enabled: true
+        interval: 10
+        duration: 5
+        amplifier: 1
+      dark-charge:
+        enabled: true
+        interval: 30
+        speed-boost: 2.0
+        duration: 3
+    rewards:
+      - id: large_points
+        chance: 100
+      - id: large_xp
+        chance: 100
+      - id: enchanted_apple
+        chance: 30
+      - id: vip_reward
+        chance: 10
+      - id: crate_key
+        chance: 50
+      - id: rare_sword
+        chance: 15
+    drops:
+      wither_blade:
+        material: NETHERITE_SWORD
+        name: '&8&lWither Blade'
+        lore:
+          - '&7Forged in the depths of the Nether'
+          - '&7Imbued with wither essence'
+          - ''
+          - '&0&lLEGENDARY'
+        chance: 5
+        enchants:
+          - DAMAGE_ALL:6
+          - SWEEPING_EDGE:3
+          - DURABILITY:4
+          - MENDING:1

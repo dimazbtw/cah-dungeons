@@ -1,0 +1,212 @@
+# Dungeon Weapon Configuration
+# Players receive this weapon when entering dungeons
+
+weapon:
+  material: "DIAMOND_SWORD"
+  name: "&c&lTHE MOB SLAYER"
+  lore:
+    - "&eThis weapon is mainly"
+    - "&eto kill dungeon mobs."
+    - ""
+    - "&eEnchants:"
+    - "&f Smite: &7{smite_level}"
+    - "&f Wisdom: &7{wisdom_level}"
+    - "&f Lifesteal: &7{lifesteal_level}"
+    - "&f Crit: &7{crit_level}"
+    - "&f Thor: &7{thor_level}"
+    - "&f Shockwave: &7{shockwave_level}"
+
+enchants:
+  #################################
+  #         SMITE ENCHANT         #
+  #################################
+  smite:
+    enabled: true
+    name: "Smite"
+    description: "Deal more damage to dungeon mobs"
+    levels:
+      1:
+        price:
+          points: 1
+        value: 5
+      2:
+        price:
+          points: 1
+        value: 10
+      3:
+        price:
+          points: 2
+        value: 25
+      4:
+        price:
+          points: 4
+        value: 50
+      5:
+        price:
+          points: 5
+        value: 79
+
+  #################################
+  #        WISDOM ENCHANT         #
+  #################################
+  wisdom:
+    enabled: true
+    name: "Wisdom"
+    description: "Gives more experience for mob kills"
+    levels:
+      1:
+        price:
+          points: 1
+        value: 5
+      2:
+        price:
+          points: 2
+        value: 10
+      3:
+        price:
+          points: 3
+        value: 20
+      4:
+        price:
+          points: 5
+        value: 35
+      5:
+        price:
+          points: 7
+        value: 50
+
+  #################################
+  #       LIFESTEAL ENCHANT       #
+  #################################
+  lifesteal:
+    enabled: true
+    name: "Lifesteal"
+    description: "Chance to heal on mob kill"
+    levels:
+      1:
+        price:
+          points: 2
+        chance: 10
+        value: 1
+      2:
+        price:
+          points: 3
+        chance: 15
+        value: 2
+      3:
+        price:
+          points: 4
+        chance: 20
+        value: 3
+      4:
+        price:
+          points: 6
+        chance: 25
+        value: 4
+      5:
+        price:
+          points: 8
+        chance: 30
+        value: 5
+
+  #################################
+  #          CRIT ENCHANT         #
+  #################################
+  crit:
+    enabled: true
+    name: "Crit"
+    description: "Chance to deal double damage"
+    levels:
+      1:
+        price:
+          points: 1
+        chance: 5
+      2:
+        price:
+          points: 2
+        chance: 10
+      3:
+        price:
+          points: 3
+        chance: 15
+      4:
+        price:
+          points: 5
+        chance: 20
+      5:
+        price:
+          points: 7
+        chance: 25
+
+  #################################
+  #          THOR ENCHANT         #
+  #################################
+  thor:
+    enabled: true
+    name: "Thor"
+    description: "Chance to summon lightning on mobs in radius"
+    levels:
+      1:
+        price:
+          points: 3
+        chance: 5
+        radius: 2
+      2:
+        price:
+          points: 4
+        chance: 10
+        radius: 3
+      3:
+        price:
+          points: 6
+        chance: 15
+        radius: 4
+      4:
+        price:
+          points: 8
+        chance: 20
+        radius: 5
+      5:
+        price:
+          points: 10
+        chance: 25
+        radius: 6
+
+  #################################
+  #       SHOCKWAVE ENCHANT       #
+  #################################
+  shockwave:
+    enabled: true
+    name: "Shockwave"
+    description: "Chance to knockback mobs in radius"
+    levels:
+      1:
+        price:
+          points: 2
+        chance: 10
+        radius: 2
+        knockback: 1
+      2:
+        price:
+          points: 3
+        chance: 15
+        radius: 3
+        knockback: 2
+      3:
+        price:
+          points: 5
+        chance: 20
+        radius: 4
+        knockback: 3
+      4:
+        price:
+          points: 7
+        chance: 25
+        radius: 5
+        knockback: 4
+      5:
+        price:
+          points: 9
+        chance: 30
+        radius: 6
+        knockback: 5

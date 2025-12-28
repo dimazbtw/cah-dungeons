@@ -1,0 +1,107 @@
+# Dungeons Configuration
+
+dungeon-settings:
+  # Maximum number of mobs that can be alive at the same time in a dungeon session
+  mob-limit: 8
+
+  # Per-dungeon mob limits (optional - overrides global setting)
+  per-dungeon-limits:
+    example: 5
+    forest_temple: 12
+
+  # Time in seconds to wait before starting dungeon after min players reached
+  start-countdown: 10
+
+  # Time in seconds between rounds
+  round-interval: 5
+
+  # Allow players to leave during dungeon
+  allow-leave: true
+
+  # Teleport players back to spawn on dungeon end
+  teleport-on-end: true
+
+  # Save player inventory before dungeon
+  save-inventory: true
+
+  # Clear inventory when entering dungeon
+  clear-inventory: false
+
+  # Give weapon on dungeon start
+  give-weapon: true
+
+# Rewards settings
+rewards:
+  # Base points for completing a dungeon
+  base-points: 100
+  # Additional points per round completed
+  points-per-round: 10
+  # Base experience for completing a dungeon
+  base-experience: 50
+  # Additional experience per mob killed
+  xp-per-mob: 5
+
+custom-items:
+  leave-item:
+    material: 'REDSTONE'
+    name: '&c&lLeave Dungeon'
+    lore:
+      - '&7Click to leave the dungeon'
+      - ''
+      - '&eRight-click to use!'
+    default-slot: 8
+    action: '[player] dungeon leave'
+
+scoreboards:
+  # Update intervals (in ticks: 20 ticks = 1 second)
+  title-animation-interval: 10  # How fast the title animates
+  update-interval: 20           # How often scoreboard content updates
+  animate-title: true           # Enable/disable title animation
+
+  status:
+    waiting: "&eWaiting for players"
+    starting: "&fStarting in &a{time}"
+    in-progress: "&aIn Progress"
+    boss-round: "&c&lBOSS ROUND"
+
+  title:
+    - '&a&lDUNGEON'
+    - '&f&lD&a&lUNGEON'
+    - '&f&lDU&a&lNGEON'
+    - '&f&lDUN&a&lGEON'
+    - '&f&lDUNG&a&lEON'
+    - '&f&lDUNGE&a&lON'
+    - '&f&lDUNGEO&a&lN'
+    - '&f&lDUNGEON'
+    - '&a&lDUNGEON'
+    - '&f&lDUNGEON'
+    - '&a&lDUNGEON'
+
+  waiting:
+    - ""
+    - "&fDungeon: &a{dungeon_display}"
+    - "&fPlayers: &a{players}/{max_players}"
+    - ""
+    - "&f{status}"
+    - ""
+    - "&ewww.yourserver.net"
+
+  in-game:
+    - ""
+    - "&c&lRound {round}/{max_rounds}"
+    - "&fMobs Left: &a{mobs_left}"
+    - ""
+    - "&fMobs Killed: &a{mobs_killed}"
+    - "&fTime: &a{duration}"
+    - "&fDungeon: &a{dungeon_display}"
+    - ""
+    - "&ewww.yourserver.net"
+
+database:
+  type: 'SQLITE' # SQLITE or MYSQL
+  mysql:
+    host: 'localhost'
+    port: 3306
+    database: 'dungeons'
+    username: 'root'
+    password: ''

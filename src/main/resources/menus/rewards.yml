@@ -1,0 +1,74 @@
+# Menu de Recompensas Pendentes
+menu:
+  title: "&8&lRecompensas Pendentes"
+  size: 54
+
+  # Slots para itens de recompensa (21 slots)
+  reward-slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+
+  # Materiais por tipo de recompensa
+  reward-materials:
+    item: "{item_material}"  # Usa o material do item
+    points: GOLD_INGOT
+    experience: EXPERIENCE_BOTTLE
+    command: COMMAND_BLOCK
+
+  # Nomes por tipo
+  reward-names:
+    points: "&6&l{amount} Pontos"
+    experience: "&a&l{amount} XP"
+    command: "&b&lRecompensa Especial"
+
+  # Botões
+  buttons:
+    info:
+      slot: 49
+      material: BOOK
+      name: "&e&lRecompensas"
+      lore:
+        - "&7Total: &f{total}"
+        - "&7Página: &f{page}/{max_pages}"
+        - ""
+        - "&aClique em uma recompensa"
+        - "&apara coletar!"
+
+    claim-all:
+      slot: 53
+      material: CHEST
+      name: "&a&lColetar Todas"
+      lore:
+        - "&7Clique para coletar todas"
+        - "&7as recompensas de uma vez!"
+        - ""
+        - "&eRecompensas: &f{total}"
+
+    prev-page:
+      slot: 48
+      material: ARROW
+      name: "&aPágina Anterior"
+      lore: []
+
+    next-page:
+      slot: 50
+      material: ARROW
+      name: "&aPróxima Página"
+      lore: []
+
+    back:
+      slot: 45
+      material: BARRIER
+      name: "&cVoltar"
+      lore: []
+
+  # Lore adicional para recompensas
+  reward-lore:
+    type: "&7Tipo: &e{type}"
+    amount: "&7Quantidade: &f{amount}"
+    dungeon: "&7Dungeon: &f{dungeon}"
+    date: "&7Data: &f{date}"
+    claim: "&aClique para coletar!"
+
+  # Decoração
+  decoration:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&7"

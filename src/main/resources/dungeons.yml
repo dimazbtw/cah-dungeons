@@ -1,0 +1,146 @@
+# Dungeons Configuration
+# Each dungeon has its own configuration
+
+dungeons:
+  example:
+    display: '&aEasy'
+    description:
+      - '&7A beginner-friendly dungeon'
+      - '&7Perfect for new adventurers'
+      - '&7Contains simple zombie enemies'
+    material:
+      type: 'STONE_SWORD'
+      name: '&a&l{dungeon_name} &7(Easy)'
+      lore:
+        - '&7{description}'
+        - ''
+        - '&fDifficulty: &aEasy'
+        - '&fPlayers: &e{min_players}-{max_players}'
+        - '&fCurrently Online: &b{total_players}'
+        - '&fStatus: {status}'
+        - '&fSchedule: {schedule}'
+        - ''
+        - '&eClick to join this dungeon!'
+      glow: true
+    player-limit:
+      max: 2
+      min: 1
+    # Sistema de agendamento (opcional)
+    # Se não definido, a dungeon está sempre disponível
+    schedule:
+      enabled: false
+      # Horários no formato HH:MM (24h)
+      # Pode definir múltiplos períodos
+      periods:
+        - start: '10:00'
+          end: '14:00'
+        - start: '18:00'
+          end: '22:00'
+      # Dias da semana (1=Segunda, 7=Domingo) - opcional
+      # Se não definido, todos os dias
+      days: [1, 2, 3, 4, 5, 6, 7]
+      # Mensagem quando fechado
+      closed-message: '&cEsta dungeon está fechada! Aberta das 10:00-14:00 e 18:00-22:00'
+    rounds:
+      limited: true
+      unlimited:
+        mobs:
+          - zombie,10,2.0
+        spawn-boss: true,5
+      limited-rounds:
+        '1':
+          mobs:
+            - zombie,3
+        '2':
+          mobs:
+            - zombie,5
+        '3':
+          mobs:
+            - zombie,10
+          boss: zombie_king
+    locs:
+      entry:
+        - world,-1230,94,99
+        - world,-1217,94,105
+        - world,-1202,94,93
+        - world,-1196,94,109
+      exit: world,-1219,94,67
+      mobs-spawn:
+        - world,-1218,94,93
+        - world,-1234,94,95
+        - world,-1212,94,106
+        - world,-1198,94,97
+      boss-spawn: world,-1214,97,95
+
+  forest_temple:
+    display: '&2Forest Temple'
+    description:
+      - '&7An ancient forest temple'
+      - '&7Filled with dangerous creatures'
+      - '&7Only for experienced adventurers'
+    material:
+      type: 'IRON_SWORD'
+      name: '&2&l{dungeon_name} &7(Medium)'
+      lore:
+        - '&7{description}'
+        - ''
+        - '&fDifficulty: &6Medium'
+        - '&fPlayers: &e{min_players}-{max_players}'
+        - '&fCurrently Online: &b{total_players}'
+        - '&fStatus: {status}'
+        - '&fSchedule: {schedule}'
+        - ''
+        - '&eClick to join this dungeon!'
+      glow: true
+    player-limit:
+      max: 4
+      min: 2
+    # Exemplo de dungeon com agendamento ativo
+    schedule:
+      enabled: true
+      periods:
+        - start: '08:00'
+          end: '12:00'
+        - start: '14:00'
+          end: '18:00'
+        - start: '20:00'
+          end: '23:59'
+      days: [1, 2, 3, 4, 5] # Apenas dias de semana
+      closed-message: '&cForest Temple fechado! Aberta em dias úteis: 08:00-12:00, 14:00-18:00, 20:00-00:00'
+    rounds:
+      limited: true
+      unlimited:
+        mobs:
+          - skeleton,15,1.5
+        spawn-boss: true,10
+      limited-rounds:
+        '1':
+          mobs:
+            - skeleton,5
+        '2':
+          mobs:
+            - skeleton,8
+            - zombie,3
+        '3':
+          mobs:
+            - skeleton,10
+            - zombie,5
+        '4':
+          mobs:
+            - skeleton,15
+            - zombie,10
+        '5':
+          mobs:
+            - skeleton,20
+            - zombie,15
+          boss: skeleton_lord
+    locs:
+      entry:
+        - world,100,64,100
+        - world,105,64,100
+      exit: world,90,64,90
+      mobs-spawn:
+        - world,110,64,110
+        - world,115,64,115
+        - world,120,64,110
+      boss-spawn: world,130,64,130

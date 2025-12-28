@@ -1,0 +1,124 @@
+# Sistema de Recompensas
+# Defina recompensas aqui e use o ID nos mobs/bosses
+
+rewards:
+  # Recompensas de Itens
+  diamond_reward:
+    type: ITEM
+    display-name: "&b&lDiamantes"
+    material: DIAMOND
+    amount: 3
+    
+  gold_reward:
+    type: ITEM
+    display-name: "&6&lOuro"
+    material: GOLD_INGOT
+    amount: 5
+
+  iron_reward:
+    type: ITEM
+    display-name: "&f&lFerro"
+    material: IRON_INGOT
+    amount: 10
+
+  emerald_reward:
+    type: ITEM
+    display-name: "&a&lEsmeraldas"
+    material: EMERALD
+    amount: 2
+
+  golden_apple:
+    type: ITEM
+    display-name: "&6&lMaçã Dourada"
+    material: GOLDEN_APPLE
+    amount: 1
+
+  enchanted_apple:
+    type: ITEM
+    display-name: "&d&lMaçã Encantada"
+    material: ENCHANTED_GOLDEN_APPLE
+    amount: 1
+
+  # Recompensas de Pontos
+  small_points:
+    type: POINTS
+    display-name: "&e&lPontos Pequenos"
+    amount: 50
+
+  medium_points:
+    type: POINTS
+    display-name: "&6&lPontos Médios"
+    amount: 150
+
+  large_points:
+    type: POINTS
+    display-name: "&c&lPontos Grandes"
+    amount: 500
+
+  # Recompensas de XP
+  small_xp:
+    type: EXPERIENCE
+    display-name: "&a&lXP Pequeno"
+    amount: 25
+
+  medium_xp:
+    type: EXPERIENCE
+    display-name: "&a&lXP Médio"
+    amount: 75
+
+  large_xp:
+    type: EXPERIENCE
+    display-name: "&a&lXP Grande"
+    amount: 200
+
+  # Recompensas de Comando (especiais)
+  vip_reward:
+    type: COMMAND
+    display-name: "&d&l[VIP] 1 Dia"
+    description: "&7Ganhe 1 dia de VIP!"
+    command: "lp user {player} parent addtemp vip 1d"
+    material: NETHER_STAR  # Material para exibir no menu
+
+  coins_reward:
+    type: COMMAND
+    display-name: "&6&l1000 Coins"
+    description: "&7Receba 1000 coins!"
+    command: "eco give {player} 1000"
+    material: GOLD_NUGGET
+
+  crate_key:
+    type: COMMAND
+    display-name: "&b&lChave de Crate"
+    description: "&7Uma chave para abrir crates!"
+    command: "crates give {player} epic 1"
+    material: TRIPWIRE_HOOK
+
+  rare_sword:
+    type: COMMAND
+    display-name: "&c&lEspada Rara"
+    description: "&7Uma espada poderosa!"
+    command: "give {player} diamond_sword{Enchantments:[{id:sharpness,lvl:5},{id:unbreaking,lvl:3}]} 1"
+    material: DIAMOND_SWORD
+
+# Configurações visuais
+visuals:
+  # Hologramas de XP
+  xp-hologram:
+    format: "&a+{amount} XP"
+    duration: 40  # ticks (2 segundos)
+    rise-speed: 0.05  # blocos por tick
+
+  # Partículas de spawn
+  spawn-particles:
+    enabled: true
+    type: SMOKE_LARGE
+    count: 20
+    offset: 0.5
+    lightning: true  # Trovão visual no spawn
+
+  # Partículas de morte
+  death-particles:
+    enabled: true
+    type: SOUL
+    count: 15
+    offset: 0.3

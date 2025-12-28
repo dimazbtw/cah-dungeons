@@ -1,0 +1,114 @@
+# Custom Mobs Configuration
+# Define custom mobs that can spawn in dungeons
+
+mobs:
+  zombie:
+    entity: ZOMBIE
+    baby: false
+    name: "&c&lDungeon Zombie"
+    range: 10.0
+    equipment:
+      helmet: LEATHER_HELMET:#1a1a1a
+      chestplate: LEATHER_CHESTPLATE:#1a1a1a
+      leggings: LEATHER_LEGGINGS:#1a1a1a
+      boots: LEATHER_BOOTS:#1a1a1a
+      main-hand: STONE_SWORD
+    attributes:
+      speed: 0.25
+      damage: 5.0
+      health: 20.0
+    # Novo sistema de recompensas - usa IDs do rewards.yml
+    rewards:
+      - id: iron_reward
+        chance: 30
+      - id: small_xp
+        chance: 50
+      - id: small_points
+        chance: 20
+    drops:
+      rotten_flesh:
+        material: ROTTEN_FLESH
+        name: '&eRotten Flesh'
+        lore:
+          - '&7Dropped from a dungeon zombie'
+        chance: 75
+        amount: 1-3
+
+  skeleton:
+    entity: SKELETON
+    name: "&7&lDungeon Skeleton"
+    range: 15.0
+    equipment:
+      helmet: CHAINMAIL_HELMET
+      chestplate: CHAINMAIL_CHESTPLATE
+      main-hand: BOW
+    attributes:
+      speed: 0.23
+      damage: 4.0
+      health: 15.0
+    rewards:
+      - id: iron_reward
+        chance: 25
+      - id: small_xp
+        chance: 40
+      - id: coins_reward
+        chance: 5
+    drops:
+      bone:
+        material: BONE
+        name: '&fSkeleton Bone'
+        lore:
+          - '&7A bone from a dungeon skeleton'
+        chance: 60
+        amount: 1-2
+
+  spider:
+    entity: SPIDER
+    name: "&8&lGiant Spider"
+    range: 12.0
+    attributes:
+      speed: 0.35
+      damage: 6.0
+      health: 18.0
+    rewards:
+      - id: small_xp
+        chance: 60
+      - id: small_points
+        chance: 30
+    drops:
+      spider_eye:
+        material: SPIDER_EYE
+        name: '&4Spider Eye'
+        lore:
+          - '&7Venomous eye'
+        chance: 40
+
+  creeper:
+    entity: CREEPER
+    name: "&a&lDungeon Creeper"
+    range: 8.0
+    attributes:
+      speed: 0.28
+      damage: 0.0
+      health: 20.0
+    rewards:
+      - id: medium_points
+        chance: 20
+      - id: small_xp
+        chance: 50
+
+  witch:
+    entity: WITCH
+    name: "&5&lDark Witch"
+    range: 15.0
+    attributes:
+      speed: 0.22
+      damage: 6.0
+      health: 26.0
+    rewards:
+      - id: emerald_reward
+        chance: 30
+      - id: medium_xp
+        chance: 40
+      - id: vip_reward
+        chance: 1

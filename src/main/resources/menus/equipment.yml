@@ -1,0 +1,106 @@
+# Menu de Equipamento de Dungeon
+menu:
+  title: "&8&lEquipamento de Dungeon"
+  size: 45
+
+  # Slots dos itens de equipamento
+  slots:
+    helmet: 10
+    chestplate: 19
+    leggings: 28
+    boots: 37
+    extra1: 15
+    extra2: 24
+
+  # Botões
+  buttons:
+    save:
+      slot: 40
+      material: LIME_DYE
+      name: "&a&lSalvar Equipamento"
+      lore:
+        - "&7Clique para salvar seu"
+        - "&7equipamento de dungeon."
+        - ""
+        - "&eEste equipamento será usado"
+        - "&equando você entrar em dungeons!"
+
+    clear:
+      slot: 38
+      material: RED_DYE
+      name: "&c&lLimpar Tudo"
+      lore:
+        - "&7Clique para remover todo"
+        - "&7o equipamento configurado."
+
+    back:
+      slot: 36
+      material: BARRIER
+      name: "&cVoltar"
+      lore: []
+
+    info:
+      slot: 4
+      material: BOOK
+      name: "&e&lEquipamento de Dungeon"
+      lore:
+        - ""
+        - "&7Configure o equipamento que você"
+        - "&7irá usar nas dungeons."
+        - ""
+        - "&c&lATENÇÃO:"
+        - "&cSe você morrer na dungeon,"
+        - "&cperde todo este equipamento!"
+        - ""
+        - "&7➤ &fArraste itens do seu inventário"
+        - "&7➤ &fSlots de armadura à esquerda"
+        - "&7➤ &fSlots extras à direita"
+        - "&7➤ &fClique em Salvar para confirmar"
+
+    # Decorações dos slots
+    helmet-label:
+      slot: 11
+      material: ARMOR_STAND
+      name: "&e&lCapacete"
+      lore:
+        - "&7Arraste um capacete aqui"
+
+    chestplate-label:
+      slot: 20
+      material: ARMOR_STAND
+      name: "&e&lPeitoral"
+      lore:
+        - "&7Arraste um peitoral aqui"
+
+    leggings-label:
+      slot: 29
+      material: ARMOR_STAND
+      name: "&e&lCalças"
+      lore:
+        - "&7Arraste uma calça aqui"
+
+    boots-label:
+      slot: 38
+      material: ARMOR_STAND
+      name: "&e&lBotas"
+      lore:
+        - "&7Arraste botas aqui"
+
+    extra1-label:
+      slot: 16
+      material: CHEST
+      name: "&6&lItem Extra 1"
+      lore:
+        - "&7Arraste qualquer item aqui"
+
+    extra2-label:
+      slot: 25
+      material: CHEST
+      name: "&6&lItem Extra 2"
+      lore:
+        - "&7Arraste qualquer item aqui"
+
+  # Decoração
+  decoration:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&7"

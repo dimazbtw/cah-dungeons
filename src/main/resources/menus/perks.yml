@@ -1,0 +1,84 @@
+# Menu de Atributos/Perks
+menu:
+  title: "&8&lAtributos"
+  size: 45
+
+  # Slots dos atributos
+  slots:
+    vitality: 11
+    strength: 13
+    agility: 15
+    player-info: 4
+    xp-info: 22
+
+  # Configuração dos atributos
+  attributes:
+    vitality:
+      material: GOLDEN_APPLE
+      name: "&c&l❤ Vitalidade"
+      description:
+        - "&7Aumenta sua vida máxima."
+        - "&7Cada ponto: &c+2 ❤"
+
+    strength:
+      material: IRON_SWORD
+      name: "&6&l⚔ Força"
+      description:
+        - "&7Aumenta seu dano de ataque."
+        - "&7Cada ponto: &6+0.5 ⚔"
+
+    agility:
+      material: FEATHER
+      name: "&b&l✦ Agilidade"
+      description:
+        - "&7Aumenta sua velocidade."
+        - "&7Cada ponto: &b+0.5 velocidade"
+        - "&7Limite: &f3.0"
+
+  # Botões
+  buttons:
+    player-info:
+      material: PLAYER_HEAD
+      name: "&e&l{player}"
+      lore:
+        - ""
+        - "&7Nível: &a{level}"
+        - "&7XP: &e{xp}&7/&e{xp_required}"
+        - ""
+        - "&6&lPontos Disponíveis: &f{perk_points}"
+        - ""
+        - "&7A cada nível você ganha"
+        - "&7&l1 ponto &7de atributo!"
+
+    xp-info:
+      material: EXPERIENCE_BOTTLE
+      name: "&a&lNível {level}"
+      lore:
+        - ""
+        - "&7Progresso: &a{progress}%"
+        - "{progress_bar}"
+        - ""
+        - "&7XP atual: &e{xp}"
+        - "&7XP necessário: &e{xp_required}"
+        - ""
+        - "&7Complete dungeons para"
+        - "&7ganhar experiência!"
+
+    back:
+      slot: 40
+      material: BARRIER
+      name: "&cVoltar"
+      lore: []
+
+  # Barra de progresso XP (slots 28-34)
+  progress-bar:
+    slots: [28, 29, 30, 31, 32, 33, 34]
+    filled-material: LIME_STAINED_GLASS_PANE
+    empty-material: GRAY_STAINED_GLASS_PANE
+    filled-name: "&a&lXP"
+    empty-name: "&7&lXP"
+
+  # Decoração
+  decoration:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&7"

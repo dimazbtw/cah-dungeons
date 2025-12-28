@@ -1,0 +1,97 @@
+# Dungeon Selection Menu Configuration
+menu:
+  title: "&8&lDungeon Selection"
+
+  shape:
+    - "xxxxxxxxx"
+    - "x<x###x>x"
+    - "xxxxxxxxx"
+
+  border:
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: "&7"
+    lore: []
+    glow: false
+
+  navigation:
+    next_page:
+      material: "ARROW"
+      name: "&a&lNext Page"
+      lore:
+        - "&7Click to view more dungeons"
+        - ""
+        - "&ePage {current_page}/{total_pages}"
+
+    previous_page:
+      material: "ARROW"
+      name: "&c&lPrevious Page"
+      lore:
+        - "&7Click to go back"
+        - ""
+        - "&ePage {current_page}/{total_pages}"
+
+    no_page:
+      material: "GRAY_STAINED_GLASS_PANE"
+      name: "&7"
+      lore: []
+
+  hotbar:
+    random:
+      slot: 2
+      material: "NETHER_STAR"
+      name: "&d&lRandom Dungeon"
+      lore:
+        - "&7Join a random dungeon!"
+        - ""
+        - "&fLet the system choose"
+        - "&fthe perfect adventure for you."
+        - ""
+        - "&eClick to join random dungeon!"
+      glow: true
+      action_type: "random"
+
+    back:
+      slot: 4
+      material: "REDSTONE"
+      name: "&c&lBack to Main Menu"
+      lore:
+        - "&7Return to the main hub"
+        - ""
+        - "&eClick to go back!"
+      glow: false
+      action_type: "back"
+
+    refresh:
+      slot: 6
+      material: "EMERALD"
+      name: "&a&lRefresh List"
+      lore:
+        - "&7Update the dungeon list"
+        - ""
+        - "&fCheck for newly available"
+        - "&fdungeons or status changes."
+        - ""
+        - "&eClick to refresh!"
+      glow: false
+      action_type: "refresh"
+
+  dungeon_button:
+    material: "DIAMOND_SWORD"
+    name: "&a&l{dungeon_name}"
+    lore:
+      - "&7{description}"
+      - ""
+      - "&fPlayers: &e{current_players}/{max_players}"
+      - "&fMin Players: &e{min_players}"
+      - "&fRounds: &e{total_rounds}"
+      - "&fStatus: {status}"
+      - ""
+      - "&eClick to join this dungeon!"
+    glow: true
+
+  status_colors:
+    waiting: "&eWaiting"
+    starting: "&aStarting"
+    in_progress: "&cIn Progress"
+    full: "&4Full"
+    available: "&aAvailable"
